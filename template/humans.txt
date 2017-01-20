@@ -1,0 +1,17 @@
+/* TEAM */
+	
+	UI developer: Rmobdick
+	From:Niterói, Brazil
+
+	UI designer: Isadora Marzano
+	From:Niterói, Brazil
+
+/* THANKS */
+
+		
+
+/* SITE */
+	Last update:2017/01/20
+	Language: portuguese
+	Doctype:HTML5
+	IDE: Sublime Text, Photoshop
