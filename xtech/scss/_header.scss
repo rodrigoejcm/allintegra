@@ -1,0 +1,25 @@
+/* - - - - - HEADER */
+
+#header{
+
+	z-index: 10;
+	height:80px;
+	@include vendor('transition', 'background-color 2s ease');
+	background-color: $cor-azul-principal;
+
+
+	&.alt {
+		background-color: transparent;
+	}
+
+
+	.logo{
+		img{
+			width: 120px;
+			padding-top:15px;
+		}
+	}
+	
+	@import 'menu';
+	
+}

@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 		// Watches for changes and runs tasks
 		watch : {
 			sass : {
-				files : ['scss/*.scss'],
+				files : ['scss/*.scss', 'vendor/scss/**/*.scss'],
 				tasks : (hasSass) ? ['sass:dev'] : null
 			},
 			css : {
@@ -52,6 +52,7 @@ module.exports = function(grunt) {
 					style : 'expanded'
 				}
 			}
+			
 		},
 
 		

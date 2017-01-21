@@ -1,0 +1,62 @@
+/* 
+
+////////// 
+INDEX_COMO_É_FÁCIL.SCSS
+Estilo do conteúdo do banner "Como é facil"
+////////// 
+
+*/
+
+#banner_facil{
+
+	background-color: $cor-azul-principal;
+	
+
+	h1{
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			height: 2px;
+			position: absolute;
+			width: 100%;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+		}
+
+		&:after {
+			bottom: 0;
+			right: 0;
+		}
+
+		color: $cor-branco-fundo-azul;
+		font-family: $fontfamily-titulo;
+		font-size: $tamanho-fonte-titulo;
+		line-height: 1.2;
+		font-weight: normal;
+	}
+
+	h3{
+		color:$cor-cinza;
+		font-family: $fontfamily-titulo;
+		font-size: $tamanho-fonte-texto-corrido;
+		text-transform: uppercase;
+		line-height: 1.2;
+		font-weight: bold;
+	}
+
+	p{
+		color:$cor-cinza;
+		font-family: $fontfamily-texto;
+		font-size: $tamanho-fonte-texto;
+		margin-top: -15px;
+	}
+
+
+
+	
+}
+

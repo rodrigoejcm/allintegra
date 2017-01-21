@@ -9,6 +9,7 @@ xtech/build/Release
 
 # Diretórios Node
 xtech/node_modules
+template/node_modules
 
 # Diretórios Sass
 */.sass-cache/

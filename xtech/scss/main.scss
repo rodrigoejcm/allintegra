@@ -1,0 +1,29 @@
+/* - - - - - IMPORTS */
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vars';
+@import 'libs/skel';
+
+@import 'variaveis';
+@import 'estrutura';
+
+/* @import 'menu'; */
+@import 'header';
+@import 'animacao_svg';
+@import 'botoes';
+@import 'index_capa';
+@import 'index_como_funciona';
+@import 'index_como_e_facil';
+
+/* @import 'datepicker.css'; */
+
+
+/* - - - - - GERAL */
+
+body{
+	background-color: $cor-de-fundo-pagina;
+}
+
+
+
+

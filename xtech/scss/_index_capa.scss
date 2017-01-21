@@ -1,0 +1,81 @@
+/* 
+
+////////// 
+INDEX_CAPA.SCSS
+Estilo do conteúdo do banner "Capa"
+////////// 
+
+*/
+
+#banner{
+
+	background-color: $cor-azul-principal;
+
+	h1{
+		&:before, &:after {
+			@include vendor('transition', 'width 0.85s ease');
+			@include vendor('transition-delay', '0.25s');
+			content: '';
+			display: block;
+			height: 2px;
+			position: absolute;
+			width: 100%;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+		}
+
+		&:after {
+			bottom: 0;
+			right: 0;
+		}
+
+	}
+
+}
+
+#content-wrap{
+
+	svg{
+			position: absolute;
+			margin:auto;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			min-width: 200px;
+			max-width: 44%;
+			overflow: hidden;
+			z-index: 0;
+
+	}
+}
+
+#banner{
+
+		
+		/* position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		z-index: 0; */
+		color: $cor-branco-fundo-azul;
+		
+
+
+	h1{
+		font-family: $fontfamily-titulo;
+		font-size: $tamanho-fonte-titulo;
+		line-height: 1.2;
+		font-weight: normal;
+	}
+
+	p{
+		font-family: $fontfamily-texto;
+		font-size: $tamanho-fonte-texto;
+		margin-top: -15px;
+	}
+}
