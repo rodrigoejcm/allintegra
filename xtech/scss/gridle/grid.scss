@@ -19,10 +19,11 @@
 // this will produces classes : center, center@mobile, center@tablet, center@ipad-landscape
 // for separators, you can use -, --, _, __ or @
 
+
 // Max size :
 .container {
 	margin:0 auto;
-	max-width:1020px;
+	max-width:980px;
 }
 
 [class*="gr-"] {

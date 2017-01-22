@@ -21,8 +21,6 @@
 		// Disable animations/transitions until the page has loaded.
 
 
-			
-
 		// Mobile?
 			/*if (skel.vars.mobile)
 				$body.addClass('is-mobile');
@@ -48,27 +46,20 @@
 		
 
 			if ($capa.length > 0 && $header.hasClass('alt')) {
+	
 
 				$window.on('resize', function() { $window.trigger('scroll'); });
 
 				$capa.scrollex({
 					bottom:		$header.outerHeight() + 1,
-					terminate:	function() { $header.removeClass('alt'); console.log("Removeu2"); },
+					terminate:	function() { $header.removeClass('alt'); },
 					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); console.log("Removeu3"); }
+					leave:		function() { $header.removeClass('alt');  }
 				});
 
 			}
 
-			if ($como_funciona.length > 0 &&	$header.hasClass('alt')) {
-
-				$header.removeClass('alt');
-				
-				$window.on('resize', function() { $window.trigger('scroll'); });
-
-				
-
-			}
+			
 
 		
 

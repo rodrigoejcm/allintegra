@@ -1,0 +1,106 @@
+/* 
+
+////////// 
+RESPONSIVO.SCSS
+Template de Midia Query ( RMOBDICK ) 
+////////// 
+
+*/
+
+
+/* Smartphones menores  ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+	/* HEADER */	
+	.logo img{
+		position: absolute;
+		margin:auto;
+		left: 0;
+		right: 0;
+	}
+
+	/* CAPA */ /* COMO FUNCIONA */
+	#banner h1, #banner_como_funciona h1, #banner_facil h1{
+		font-size: $responsivo-tamanho-fonte-titulo;
+		padding: 0 10px;
+		margin-bottom: 30px;
+	}
+
+	#banner .botao{
+		margin-top: 30px;
+	}
+
+	#banner p, #banner_como_funciona p{
+		font-size: $responsivo-tamanho-fonte-texto;
+		padding: 0 10px;
+		margin-top: 0;
+	}
+
+	#banner_como_funciona {
+		
+		height: 130vh;
+
+		br{
+			display: none;
+		}
+
+		.container{
+			background-image:none;
+		}
+
+		.imagem_funcional{
+			
+			height: 270px;
+			background-image: url('../images/comofunciona.png');
+			background-repeat: no-repeat;
+			background-size: 168%;
+			background-position: center -20px;
+
+			img{
+				position: initial;
+				margin: 110px 0;	
+			}
+			
+		}
+	}
+
+	#banner_facil{
+		.video_funcional iframe{
+			width: 90%;
+			margin: 0 5%;
+		}
+
+		p{
+			font-size: $responsivo-tamanho-fonte-legenda;
+		}
+	}
+
+	#content-wrap{
+		svg{
+			max-width: 96%;
+		}
+	}
+
+}
+
+/* Smartphones maiores  ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
+}
+
+
+/* Tablets médios e telas menores  ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 979px) {
+}
+
+
+/* Tablets maiores e Telas intermediarias  ----------- */
+@media only screen and (min-device-width : 980px) and (max-device-width : 1024px) {
+}
+
+/* Telas Maiores ----------- */
+@media only screen and (min-device-width : 1024px) {
+
+}
+
+
+

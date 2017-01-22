@@ -17,12 +17,12 @@
 	/* text-overflow: ellipsis; */
 
 	&:hover {
-		background-color: green;
+		background-color: $cor-verde;
 		font-weight: bold;
 	}
 
 	&:active {
-		background-color: green;
+		background-color: $cor-verde;
 	}
 
 

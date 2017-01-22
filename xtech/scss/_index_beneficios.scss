@@ -1,0 +1,84 @@
+/* 
+
+////////// 
+INDEX_BENEFICIOS.SCSS
+Estilo do conteúdo do banner "Beneficios"
+////////// 
+
+*/
+
+#banner_beneficios{
+
+
+	h1{
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			height: 2px;
+			position: absolute;
+			width: 100%;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+		}
+
+		&:after {
+			bottom: 0;
+			right: 0;
+		}
+
+		color: $cor-azul-principal;
+		font-family: $fontfamily-titulo;
+		font-size: $tamanho-fonte-titulo;
+		line-height: 1.2;
+		font-weight: normal;
+	}
+
+
+	.box_beneficio{
+
+		margin-top: 25px;
+		margin-bottom: 45px;
+		
+
+		.titulo{
+			i{
+				font-size: $tamanho-fonte-icone;
+				color:$cor-azul-principal;
+				padding-right: 15px;
+			    display: inline;
+			    line-height: 1;
+			    text-align: center;
+
+			}
+			h3{
+				display: inline;
+			    text-transform: uppercase;
+				color:$cor-cinza;
+				font-family: $fontfamily-titulo;
+				font-size: $tamanho-fonte-texto;
+				text-transform: uppercase;
+				line-height: 1.2;
+				font-weight: bold;
+				letter-spacing: 2px;
+				text-align: justify;
+			}
+
+
+		}
+		.texto{
+			margin-top: 15px;
+			color:$cor-cinza;
+			font-family: $fontfamily-texto;
+			font-size: $tamanho-fonte-texto;
+			margin-top: -15px;
+
+
+		}
+	}
+
+}
+

@@ -10,10 +10,11 @@ Estilo do conteúdo do banner "Como funciona"
 
 #banner_como_funciona{
 
-	background-image: url('../images/circulo-fundo-home.svg');
+	/* background-image: url('../images/circulo-fundo-home.svg');
 	background-repeat: no-repeat;
 	background-size: 135%;
 	background-position: center;
+ */
 
 
 /* 	background-color: $cor-cinza;
@@ -41,6 +42,7 @@ Estilo do conteúdo do banner "Como funciona"
 			right: 0;
 		}
 
+		margin-bottom: 80px;
 		color: $cor-azul-principal;
 		font-family: $fontfamily-titulo;
 		font-size: $tamanho-fonte-titulo;
@@ -84,5 +86,17 @@ Estilo do conteúdo do banner "Como funciona"
 
 	}
 
+}
+
+
+.backgroud_compartilhado{
+
+	img{
+		width:100%;
+		overflow: hidden;
+		position:absolute;
+		z-index: 3;
+	}
+	
 }
 

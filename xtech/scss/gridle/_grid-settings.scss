@@ -6,10 +6,11 @@
 @include gridle_setup((
 	context : 12,
 	gutter-width : 20px,
-	// gutter-left : 20px,
+	gutter-left : 10px,
+	
 	// direction : rtl,
 	// dir-attribute : true,
-	states-classes : true,
+	states-classes : true
 	// classes-prefix : 'gr-'
 ));
 

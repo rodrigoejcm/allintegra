@@ -32,6 +32,7 @@ Estilo do conteúdo do banner "Como é facil"
 			right: 0;
 		}
 
+		margin-bottom: 80px;
 		color: $cor-branco-fundo-azul;
 		font-family: $fontfamily-titulo;
 		font-size: $tamanho-fonte-titulo;
@@ -49,13 +50,40 @@ Estilo do conteúdo do banner "Como é facil"
 	}
 
 	p{
-		color:$cor-cinza;
+		color:$cor-branco-fundo-azul;
 		font-family: $fontfamily-texto;
 		font-size: $tamanho-fonte-texto;
 		margin-top: -15px;
 	}
 
+	a, a:visited{
+		color:$cor-branco-fundo-azul;
+		text-decoration: none;
+	}
 
+	.video_funcional{
+		position: relative;
+		height: 0;
+		overflow: hidden;
+	}
+
+	/* 16x9 Aspect Ratio */
+	.video_funcional-16x9 {
+	  padding-bottom: 56.25%;
+	}
+	 
+	/* 4x3 Aspect Ratio */
+	.video_funcional-4x3 {
+	  padding-bottom: 75%;
+	}
+	 
+	.video_funcional iframe {
+	  position: absolute;
+	  top:0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	}
 
 	
 }

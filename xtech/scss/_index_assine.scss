@@ -1,0 +1,242 @@
+/* 
+
+////////// 
+INDEX_ASSINE.SCSS
+Estilo do conteúdo do banner "ASSINE"
+////////// 
+
+*/
+
+#banner_assine{
+
+	background-color: $cor-azul-principal;
+
+	h1,h2{
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			height: 2px;
+			position: absolute;
+			width: 100%;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+		}
+
+		&:after {
+			bottom: 0;
+			right: 0;
+		}
+
+		color: $cor-branco-fundo-azul;
+		font-family: $fontfamily-titulo;
+		font-size: $tamanho-fonte-titulo;
+		line-height: 1.2;
+		font-weight: normal;
+	}
+
+	.h1alternativo{
+		font-family: $fontfamily-texto;
+	}
+
+	h2{
+		font-size: $tamanho-fonte-valor;
+		padding-bottom: 5px;
+		border-bottom: 2px solid white;
+		
+		span{
+			font-size: 25px;
+		}
+	}
+
+	p{
+		color:$cor-branco-fundo-azul;
+		font-family: $fontfamily-texto;
+		font-size: $tamanho-fonte-texto;
+		margin-top: -15px;
+	}
+
+	.descricao_valor{
+		margin-top: -45px;
+		font-size: $tamanho-fonte-descricao-valor;
+	}
+
+	.valor{
+		margin-top: -30px;
+		margin-bottom: -30px;
+	}
+
+
+
+}
+
+
+#banner_assine2{
+
+	background-color: $cor-azul-principal;
+
+	h1,h2{
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			height: 2px;
+			position: absolute;
+			width: 100%;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+		}
+
+		&:after {
+			bottom: 0;
+			right: 0;
+		}
+
+		color: $cor-branco-fundo-azul;
+		font-family: $fontfamily-titulo;
+		font-size: $tamanho-fonte-titulo;
+		line-height: 1.2;
+		font-weight: normal;
+	}
+
+	.h1alternativo{
+		font-size: 35px;
+	}
+
+	h2{
+		font-size: $tamanho-fonte-valor;
+		padding-bottom: 1px;
+		letter-spacing: -1.8px;
+		font-weight: bold;
+		
+		span.maior{
+			font-size: 32px;
+			font-weight: normal;
+		}
+
+		span.menor{
+			font-size: 25px;
+			font-weight: normal;
+		}
+	}
+
+	p{
+		color:$cor-branco-fundo-azul;
+		font-family: $fontfamily-texto;
+		font-size: $tamanho-fonte-texto;
+		margin-top: -15px;
+	}
+
+	.descricao_valor{
+		margin-top: -55px;
+	    padding: 0 110px;
+		font-size: $tamanho-fonte-descricao-valor;
+	}
+
+	.valor{
+		margin-top: -25px;
+		margin-bottom: -30px;
+	}
+
+	.ou{
+		margin-bottom: -90px;
+	}
+
+	.teste{
+		padding: 20% 15%;
+	}
+
+
+
+}
+
+
+#banner_assine3{
+
+	background-color: $cor-azul-principal;
+
+	h1,h2{
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			height: 2px;
+			position: absolute;
+			width: 100%;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+		}
+
+		&:after {
+			bottom: 0;
+			right: 0;
+		}
+
+		color: $cor-branco-fundo-azul;
+		font-family: $fontfamily-titulo;
+		font-size: $tamanho-fonte-titulo;
+		line-height: 1.2;
+		font-weight: normal;
+	}
+
+	.h1alternativo{
+		font-size: 35px;
+	}
+
+	h2{
+		font-size: $tamanho-fonte-valor;
+		padding-bottom: 1px;
+		letter-spacing: -1.8px;
+		font-weight: bold;
+		
+		span.maior{
+			font-size: 32px;
+			font-weight: normal;
+		}
+
+		span.menor{
+			font-size: 25px;
+			font-weight: normal;
+		}
+	}
+
+	p{
+		color:$cor-branco-fundo-azul;
+		font-family: $fontfamily-texto;
+		font-size: $tamanho-fonte-texto;
+		margin-top: -15px;
+	}
+
+	.descricao_valor{
+		margin-top: -55px;
+	    padding: 0 110px;
+		font-size: $tamanho-fonte-descricao-valor;
+	}
+
+	.valor{
+		margin-top: -25px;
+		margin-bottom: -30px;
+	}
+
+	.ou{
+		margin-bottom: -90px;
+	}
+
+	.teste{
+		padding: 20% 15%;
+	}
+
+
+
+}
+
+

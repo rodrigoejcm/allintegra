@@ -1,17 +1,24 @@
 /* - - - - - HEADER */
 
+
 #header{
 
 	z-index: 10;
-	height:80px;
+	height:90px;
 	@include vendor('transition', 'background-color 2s ease');
 	background-color: $cor-azul-principal;
-
-
+	-webkit-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.5);
+	
 	&.alt {
+		
 		background-color: transparent;
-	}
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
 
+	}
 
 	.logo{
 		img{

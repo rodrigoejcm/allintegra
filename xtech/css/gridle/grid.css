@@ -4997,7 +4997,7 @@ body {
 }
 .container {
   margin: 0 auto;
-  max-width: 1020px;
+  max-width: 980px;
 }
 
 .state-mobile .state-default [class*="gr-"] {
