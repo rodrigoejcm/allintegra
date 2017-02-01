@@ -38,6 +38,7 @@ Template de Midia Query ( RMOBDICK )
 
 	#banner_como_funciona {
 		
+		background-image: none;
 		height: 130vh;
 
 		br{
@@ -48,20 +49,38 @@ Template de Midia Query ( RMOBDICK )
 			background-image:none;
 		}
 
-		.imagem_funcional{
-			
-			height: 270px;
-			background-image: url('../images/comofunciona.png');
-			background-repeat: no-repeat;
-			background-size: 168%;
-			background-position: center -20px;
-
-			img{
-				position: initial;
-				margin: 110px 0;	
-			}
-			
+		.imagem-integracao .img-int {
+		    position: relative;
+		    margin: auto;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		    background-position: center;
+		    background-size: 80%;
+		    background-repeat: no-repeat;
+		    width: 304px;
+		    height: 315px;
 		}
+
+		.integracoes{
+			margin-top: 10px;
+			margin-bottom: 70px;
+		}
+
+		.linha-divisoria{
+			height: 0;
+			display: none;
+		}
+
+		.embreve{
+			margin-bottom: 30px;
+		}
+
+		.exportacao{
+			margin-bottom: 35px;
+		}
+		
 	}
 
 	#banner_facil{
@@ -73,6 +92,61 @@ Template de Midia Query ( RMOBDICK )
 		p{
 			font-size: $responsivo-tamanho-fonte-legenda;
 		}
+	}
+
+	#banner_beneficios{
+		height: 100%;
+
+
+		h1 {
+		    margin-top: 75px;
+		    font-size: 35px;
+		}
+
+		.box_beneficio {
+    		padding: 0 20px;
+		}
+
+		.grupo_final{
+			margin-bottom: 30px;
+		}
+	}
+
+	#banner_assine{
+		height: 100%;
+
+		h1{
+			margin-top: 85px;
+			font-size: 35px;
+			padding: 0 10px;
+    		margin-bottom: 30px;
+		}
+
+
+		 h2 {
+    		font-size: 50px;
+    		margin: 0 20px;
+
+    	}
+
+    	.para_cada{
+    		visibility: hidden;
+    	}
+
+    	.descricao_valor{
+    		margin-top: 5px;
+    		font-size: 13px;
+    		padding: 0 30px;
+    	}
+
+    	.h1alternativo {
+    	    margin-top: -10px;
+    	}
+
+    	.botao_final{
+    		margin-top: 30px;
+    		margin-bottom: 60px;
+    	}
 	}
 
 	#content-wrap{

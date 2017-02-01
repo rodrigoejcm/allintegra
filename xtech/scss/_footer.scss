@@ -1,8 +1,15 @@
 #page-footer{
-	height:70px;
+	margin-top: 10px;
+	/* height:70px; */
 	font-size: 12px;
 
 	color: $cor-cinza;
 	text-align: center;
 	background-color: white;
+
+	
+
+	p img{
+		width: 150px;
+	}
 }

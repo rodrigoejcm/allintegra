@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 					{
 						src : ['**/*.scss', '!**/_*.scss'],
 						cwd : 'scss',
-						dest : 'css',
+						dest : 'dist/css',
 						ext : '.css',
 						expand : true
 					}
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 					}
 				],
 				options : {
-					style : 'expanded'
+					style : 'compressed'
 				}
 			}
 			
@@ -76,6 +76,30 @@ module.exports = function(grunt) {
 			}
 		},
 
+		uglify: {
+		   dist: {
+		      options: {
+		         sourceMap: true,
+		         banner: '/*! main js - Allintegra - template xtexh conncta */'
+		      },
+		      files: {
+		         'dist/js/allintegra-xtech.min.js': ['js/*.js'],
+		      }
+		   }
+		},
+
+
+		cssmin: {
+		   dist: {
+		      options: {
+		         banner: '/*! TESTE CSS*/'
+		      },
+		      files: {
+		         'dist/css/style.min.css': ['css/**/*.css']
+		      }
+		  }
+		},
+
 		// Image min
 		imagemin : {
 			production : {
@@ -84,7 +108,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'images',
 						src: '**/*.{png,jpg,jpeg}',
-						dest: 'images'
+						dest: 'dist/images'
 					}
 				]
 			}
@@ -98,7 +122,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'images',
 						src: '**/*.svg',
-						dest: 'images'
+						dest: 'dist/images'
 					}
 				]
 			}
@@ -108,6 +132,20 @@ module.exports = function(grunt) {
 
 	// Default task
 	grunt.registerTask('default', ['watch']);
+
+		// Template Setup Task
+	grunt.registerTask('production', function() {
+		var arr = [];
+
+		if (hasSass) {
+			arr.push('sass:production');
+		}
+		arr.push('cssmin:dist');
+		arr.push('uglify:dist');
+		arr.push('imagemin:production');
+		arr.push('svgmin:production');
+		return grunt.task.run(arr);
+	});
 
 	
 
@@ -133,7 +171,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-bower-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-svgmin');
 
 	// Run bower install

@@ -21,6 +21,22 @@ Estilo do conteúdo do banner "Como funciona"
     -webkit-mask:  url('../images/circulo-fundo-home.svg') no-repeat 50% 50%;
     mask: url('../images/circulo-fundo-home.svg') no-repeat 50% 50%; */
 	
+	background-image: url(../images/integracao-fundo.png);
+	background-position:center;
+	background-size: 106%;
+
+
+
+	.banner_tamanho_var_espacamento{
+		padding-top: 50px;
+	}
+
+	.integracoes{
+		margin-top: 70px;
+		margin-bottom: 110px;
+	}
+
+
 
 	h1{
 
@@ -43,6 +59,7 @@ Estilo do conteúdo do banner "Como funciona"
 		}
 
 		margin-bottom: 80px;
+		margin-top: 50px;
 		color: $cor-azul-principal;
 		font-family: $fontfamily-titulo;
 		font-size: $tamanho-fonte-titulo;
@@ -64,6 +81,7 @@ Estilo do conteúdo do banner "Como funciona"
 		font-family: $fontfamily-texto;
 		font-size: $tamanho-fonte-texto;
 		margin-top: -15px;
+		padding: 0 12%;
 	}
 
 	.imagem_funcional{
@@ -78,25 +96,48 @@ Estilo do conteúdo do banner "Como funciona"
 		}
 	}
 
-	.container{
-		background-image: url('../images/comofunciona.png');
-		background-repeat: no-repeat;
-		background-size: 75%;
-		background-position: center 110%;
-
-	}
-
-}
-
-
-.backgroud_compartilhado{
-
-	img{
-		width:100%;
-		overflow: hidden;
-		position:absolute;
-		z-index: 3;
-	}
 	
+
+	.imagem-integracao{
+		width: 100%;
+		height: 100%;
+
+
+		.img-int{
+			position:relative;
+			margin: auto;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			background-position:center;
+			background-size: cover;
+			width: 386px;
+			height: 353px;
+		}
+
+		.img-loja-mkt{
+		background-image: url(../images/integracao-loja-market.png);
+		}
+
+		.img-erp-loja{
+			background-image: url(../images/integracao-erp-loja.png);
+		}
+
+	}
+
+	.linha-divisoria{
+		
+		height: 360px;
+		float: right;
+    	margin-right: -17%;
+		border-left: 1px solid #ccc;
+	}
+
+	
+
 }
+
+
+
 
