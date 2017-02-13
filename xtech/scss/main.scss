@@ -1,13 +1,20 @@
-/* - - - - - IMPORTS */
+/* - - - - - IMPORTS - base */
+
+@import 'css/normalize';
+@import 'css/html5boilerplate';
+
+
+/* - - - - - IMPORTS - libs */
+
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/vars';
 @import 'libs/skel';
 
+/* - - - - - IMPORTS - estilos */
+
 @import 'variaveis';
 @import 'estrutura';
-
-/* @import 'menu'; */
 @import 'header';
 @import 'animacao_svg';
 @import 'botoes';
@@ -19,10 +26,20 @@
 @import 'responsivo';
 @import 'footer';
 
-/* @import 'datepicker.css'; */
 
+/* - - - - - IMPORTS - unslider */
 
-/* - - - - - GERAL */
+@import 'css/unslider';
+@import 'css/unslider-dots';
+
+/* 
+
+////////// 
+GERAL
+Variáveis de cor, tamanho e etc.
+////////// 
+
+*/
 
 body{
 	background-color: $cor-de-fundo-pagina;

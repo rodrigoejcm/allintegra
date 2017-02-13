@@ -48,6 +48,8 @@ header {
 
 #page-wrapper {
 
+	overflow: hidden;
+
 	&:before {
 		content: '';
 		display: block;
@@ -81,7 +83,7 @@ header {
 	@include vendor('justify-content', 'center');
 	cursor: default;
 	height: 100vh;
-	min-height: 35em;
+	min-height: 330px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;

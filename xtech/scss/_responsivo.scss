@@ -8,7 +8,7 @@ Template de Midia Query ( RMOBDICK )
 */
 
 
-/* Smartphones menores  ----------- */
+/* Smartphones menores  ----------- XS */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 	/* HEADER */	
@@ -32,7 +32,7 @@ Template de Midia Query ( RMOBDICK )
 
 	#banner p, #banner_como_funciona p{
 		font-size: $responsivo-tamanho-fonte-texto;
-		padding: 0 10px;
+		padding: 0 16px;
 		margin-top: 0;
 	}
 
@@ -99,16 +99,25 @@ Template de Midia Query ( RMOBDICK )
 
 
 		h1 {
-		    margin-top: 75px;
+		    margin-top: 40px;;
 		    font-size: 35px;
 		}
 
 		.box_beneficio {
-    		padding: 0 20px;
+    		padding: 0 10px;
+
+    		.texto{
+    			padding: 0 35px;
+    			font-size: $responsivo-tamanho-fonte-texto;
+    		}
 		}
 
 		.grupo_final{
 			margin-bottom: 30px;
+		}
+
+		.slider-beneficios ul li{
+			list-style-type: none;
 		}
 	}
 
@@ -135,7 +144,7 @@ Template de Midia Query ( RMOBDICK )
 
     	.descricao_valor{
     		margin-top: 5px;
-    		font-size: 13px;
+    		font-size: $responsivo-tamanho-fonte-texto;
     		padding: 0 30px;
     	}
 
@@ -157,23 +166,32 @@ Template de Midia Query ( RMOBDICK )
 
 }
 
-/* Smartphones maiores  ----------- */
+/* Smartphones maiores  ----------- S */
 @media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
+
 }
 
 
-/* Tablets médios e telas menores  ----------- */
+/* Tablets médios e telas menores  ----------- M */
 @media only screen and (min-device-width : 768px) and (max-device-width : 979px) {
+	.somente-xss{
+		display: none;
+	}
 }
 
 
-/* Tablets maiores e Telas intermediarias  ----------- */
+/* Tablets maiores e Telas intermediarias  ----------- L */
 @media only screen and (min-device-width : 980px) and (max-device-width : 1024px) {
+	.somente-xss{
+		display: none;
+	}
 }
 
-/* Telas Maiores ----------- */
+/* Telas Maiores ----------- XL */
 @media only screen and (min-device-width : 1024px) {
-
+	.somente-xss{
+		display: none;
+	}
 }
 
 
